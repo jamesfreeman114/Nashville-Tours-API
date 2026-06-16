@@ -6,7 +6,9 @@ from toursapi.views import (
     register_user,
     login_user,
     get_current_user,
+    TripView
     )
+
 
 router = routers.DefaultRouter(trailing_slash=False)
 
@@ -16,4 +18,7 @@ urlpatterns = [
     path('login', login_user),
     path('current_user', get_current_user),
 ]
+
+router.register(r'trips', TripView, 'trip')
+
 
