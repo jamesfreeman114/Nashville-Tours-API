@@ -1,0 +1,93 @@
+[
+    {
+        "model": "toursapi.trip",
+        "pk": 1,
+        "fields": {
+            "name": "Airport Pickup/Dropoff",
+            "description": "Comfortable rides to and from the airport.",
+            "image_path": "https://bnavisionnashville.com/site/web/assets/2017/01/IAF-rend-1000x563.png"
+        }
+    },
+    {
+        "model": "toursapi.trip",
+        "pk": 2,
+        "fields": {
+            "name": "In Town Ride",
+            "description": "Quick rides to any location in the Nashville Metro Area.",
+            "image_path": "https://tinyurl.com/yzae762m"
+        }
+    },
+    {
+        "model": "toursapi.trip",
+        "pk": 3,
+        "fields": {
+            "name": "Downtown Tour",
+            "description": "A fun filled tour through Downtown Nashville for large groups!",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 4,
+        "fields": {
+            "name": "Brewery Tour",
+            "description": "Try some of Nashville's best local breweries with this multi-stop tour.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 5,
+        "fields": {
+            "name": "Distillery Tour",
+            "description": "Stop for tasting at multiple Nashville based Moonshine and Whiskey Distilleries.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 6,
+        "fields": {
+            "name": "Vineyard Tour",
+            "description": "Enjoy a scenic ride to the outskirts of town for a scenic tour of Arrington Vineyards.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 7,
+        "fields": {
+            "name": "Music Row and Midtown Tour",
+            "description": "You and your group will get a tour of Nashville's famous Music Row with stops at local hotspots in Midtown.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 8,
+        "fields": {
+            "name": "Historic Tour",
+            "description": "This extended tour through Nashville stops along many of the cities historical sites.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+    {
+      "model": "toursapi.trip",
+        "pk": 9,
+        "fields": {
+            "name": "Half-Day Booking",
+            "description": "Book your own personal chauffeur for a Half Day.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    },
+     {
+      "model": "toursapi.trip",
+        "pk": 9,
+        "fields": {
+            "name": "Full-Day Booking",
+            "description": "Your own personal driver for an entire day.",
+            "image_path": "https://tinyurl.com/368wkwu7"
+        }
+    }
+
+]
