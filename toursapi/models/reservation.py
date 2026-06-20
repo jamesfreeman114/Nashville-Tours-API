@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from .trip_vehicle import TripVehicle
+from .tripvehicle import TripVehicle
 
 class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

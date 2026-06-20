@@ -6,7 +6,7 @@ from toursapi.views import (
     register_user,
     login_user,
     get_current_user,
-    TripView, VehicleView
+    TripView, VehicleView, TripVehicleView
     )
 
 
@@ -14,6 +14,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'trips', TripView, 'trip')
 router.register(r'vehicles', VehicleView, 'vehicle')
+router.register(r'tripvehicles', TripVehicleView, 'tripvehicle')
 
 urlpatterns = [
     path('', include(router.urls)),

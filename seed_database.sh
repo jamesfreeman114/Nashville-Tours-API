@@ -9,4 +9,4 @@ python3 manage.py loaddata users
 python3 manage.py loaddata tokens
 python3 manage.py loaddata trips
 python3 manage.py loaddata vehicles
-
+python3 manage.py loaddata trip_vehicles
