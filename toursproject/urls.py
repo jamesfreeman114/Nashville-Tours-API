@@ -6,13 +6,14 @@ from toursapi.views import (
     register_user,
     login_user,
     get_current_user,
-    TripView
+    TripView, VehicleView
     )
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'trips', TripView, 'trip')
+router.register(r'vehicles', VehicleView, 'vehicle')
 
 urlpatterns = [
     path('', include(router.urls)),
