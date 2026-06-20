@@ -1,0 +1,123 @@
+[
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 1,
+        "fields": {
+            "trip_id": 1,
+            "vehicle_id": 1
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 2,
+        "fields": {
+            "trip_id": 1,
+            "vehicle_id": 2
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 3,
+        "fields": {
+            "trip_id": 2,
+            "vehicle_id": 1
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 4,
+        "fields": {
+            "trip_id": 2,
+            "vehicle_id": 2
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 5,
+        "fields": {
+            "trip_id": 3,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 6,
+        "fields": {
+            "trip_id": 3,
+            "vehicle_id": 4
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 7,
+        "fields": {
+            "trip_id": 4,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 8,
+        "fields": {
+            "trip_id": 5,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 9,
+        "fields": {
+            "trip_id": 6,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 10,
+        "fields": {
+            "trip_id": 7,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 11,
+        "fields": {
+            "trip_id": 7,
+            "vehicle_id": 4
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 12,
+        "fields": {
+            "trip_id": 8,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 13,
+        "fields": {
+            "trip_id": 9,
+            "vehicle_id": 1
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 14,
+        "fields": {
+            "trip_id": 9,
+            "vehicle_id": 2
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 15,
+        "fields": {
+            "trip_id": 9,
+            "vehicle_id": 3
+        }
+    }
+
+]
