@@ -1,0 +1,34 @@
+[
+    {
+        "model": "toursapi.vehicle",
+        "id": 1,
+        "fields": {
+            "name": "Sedan",
+            "capacity": 4
+        }
+    },
+    {
+        "model": "toursapi.vehicle",
+        "id": 2,
+        "fields": {
+            "name": "SUV",
+            "capacity": 6
+        }
+    },
+    {
+        "model": "toursapi.vehicle",
+        "id": 3,
+        "fields": {
+            "name": "Luxury Van",
+            "capacity": 8
+        }
+    },
+    {
+        "model": "toursapi.vehicle",
+        "id": 4,
+        "fields": {
+            "name": "Party Bus",
+            "capacity": 12
+        }
+    }
+]    
