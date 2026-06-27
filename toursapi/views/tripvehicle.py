@@ -7,12 +7,17 @@ from ..models import Vehicle, Trip, TripVehicle
 class TripVehicleView(ViewSet):
 
     def list(self, request):
+
+        trip = request.data["trip"]
+        
         try:
-            trip_vehicles = TripVehicle.objects.all()
+            trip_vehicles = TripVehicle.objects.filter(trip=trip)
             serializer = TripVehicleSerializer(trip_vehicles, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
             return HttpResponseServerError(ex)
+    
+
 
 class TripSerializer(serializers.ModelSerializer):
 
