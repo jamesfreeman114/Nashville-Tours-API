@@ -8,10 +8,14 @@ class TripVehicleView(ViewSet):
 
     def list(self, request):
 
-        trip = request.data["trip"]
+        trip_option = self.request.query_params.get('trip', None)
         
         try:
-            trip_vehicles = TripVehicle.objects.filter(trip=trip)
+            trip_vehicles = TripVehicle.objects.all()
+
+            if trip_option is not None: 
+                trip_vehicles = TripVehicle.objects.filter(trip=trip_option)
+
             serializer = TripVehicleSerializer(trip_vehicles, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
