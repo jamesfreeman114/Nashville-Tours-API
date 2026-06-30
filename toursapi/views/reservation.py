@@ -42,6 +42,53 @@ class ReservationView(ViewSet):
         serialized = ReservationSerializer(reservation, many=False)
 
         return Response(serialized.data, status=status.HTTP_201_CREATED)
+    
+    def update(self, request, pk=None):
+        """Handle PUT requests
+
+        Returns:
+            Response -- Empty body with 204 status code
+
+        """
+        trip_vehicle = TripVehicle.objects.get(pk=request.data['tripVehicleId'])
+
+        try:
+            reservation = Reservation.objects.get(pk=pk)
+            reservation.scheduled_datetime = request.data['scheduled_datetime']
+            reservation.trip_vehicle = trip_vehicle
+
+            if reservation.user.id == request.auth.user.id:
+                reservation.save()
+                return Response(None, status=status.HTTP_204_NO_CONTENT)
+            else:
+                return Response({'message': 'You cannot edit another users reservation.'}, status=status.HTTP_403_FORBIDDEN)
+            
+        except Reservation.DoesNotExist:
+            return Response(None, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
+
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a single item
+
+        Returns:
+            Response -- 200, 404, or 500 status code
+        """
+        try:
+            reservation = Reservation.objects.get(pk=pk)
+            if reservation.user.id == request.auth.user.id:
+                reservation.delete()
+                return Response(None, status=status.HTTP_204_NO_CONTENT)
+            else:
+                return Response({'message': 'You cannot delete another users reservation.'}, status=status.HTTP_403_FORBIDDEN)
+
+        except Reservation.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class TripSerializer(serializers.ModelSerializer):
 
