@@ -21,6 +21,23 @@ class ReservationView(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
     
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single item
+
+        Returns:
+            Response -- JSON serialized instance
+        """
+        try:
+            reservation = Reservation.objects.get(pk=pk)
+            serializer = ReservationSerializer(reservation)
+            if reservation.user.id == request.auth.user.id:
+                return Response(serializer.data)
+            else:
+                return Response({"message": "You cannot view another users reservation"}, status=status.HTTP_403_FORBIDDEN)
+        except Exception as ex:
+            return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
+    
+    
     def create(self, request):
         """Handle POST requests for Reservations
 
@@ -94,13 +111,13 @@ class TripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ('name',)
+        fields = ('id', 'name',)
 
 class VehicleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Vehicle
-        fields = ('name',)
+        fields = ('id', 'name',)
         
 
 class TripVehicleSerializer(serializers.ModelSerializer):
@@ -110,7 +127,7 @@ class TripVehicleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TripVehicle
-        fields = ('trip', 'vehicle',)
+        fields = ('id', 'trip', 'vehicle',)
 
 
 
