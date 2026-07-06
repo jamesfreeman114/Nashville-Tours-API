@@ -82,7 +82,7 @@
     },
      {
       "model": "toursapi.trip",
-        "pk": 9,
+        "pk": 10,
         "fields": {
             "name": "Full-Day Booking",
             "description": "Your own personal driver for an entire day.",

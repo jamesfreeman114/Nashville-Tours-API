@@ -1,0 +1,217 @@
+[
+    {
+        "model": "toursapi.review",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 1,
+            "rating": 5,
+            "comment": "Nashville Tours Airport pickup and dropoff service is so convenient, and their drivers are so friendly!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 2,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 1,
+            "rating": 4,
+            "comment": "Our car was there waiting for us right on time!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 3,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 1,
+            "rating": 5,
+            "comment": "We love using Nashville tours when flying in and out of BNA! Top notch service every time."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 4,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 2,
+            "rating": 4,
+            "comment": "We were able to get a ride across town and avoided surge pricing from other rideshare services."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 5,
+        "fields": {
+            "user_id": 3,
+            "trip_id": 2,
+            "rating": 5,
+            "comment": "Nice roomy car with plenty of legroom, and our driver gave us some great recommendations!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 6,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 3,
+            "rating": 5,
+            "comment": "We had so much fun taking a tour of Downtown Nasvhille! We had a large group and were all able to stay together!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 7,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 3,
+            "rating": 5,
+            "comment": "Taking a party bus Downtown was on our list of must-do Nashville activities! We're so glad we went with Nashville Tours"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 8,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 4,
+            "rating": 4,
+            "comment": "Was nice being able to sample some of Nashville's local breweries and have our own driver"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 9,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 4,
+            "rating": 4,
+            "comment": "We were able to keep our entire group together and visit three different spots we have been wanting to check out."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 10,
+        "fields": {
+            "user_id": 5,
+            "trip_id": 5,
+            "rating": 4,
+            "comment": "This was our first time visiting the state so we had to taking a tour to try some Tennessee Whiskey was a must"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 11,
+        "fields": {
+            "user_id": 3,
+            "trip_id": 5,
+            "rating": 5,
+            "comment": "Went on this tour during a friend's Bachelor party and had a blast!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 12,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 6,
+            "rating": 5,
+            "comment": "Arrington Vineyards is so beautiful! We enjoyed the scenic views on the way to and from our wine tasting."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 13,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 6,
+            "rating": 3,
+            "comment": "We had a great time, but didn't know it was going to be such a long drive."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 14,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 6,
+            "rating": 3,
+            "comment": "We had a great time, but didn't know it was going to be such a long drive."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 15,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 7,
+            "rating": 4,
+            "comment": "We really enjoyed this private tour of Music Row and its many famous recording studios."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 16,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 7,
+            "rating": 5,
+            "comment": "We're big country music fans so we loved seeing some of the spots where are favorite artists record and perform"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 17,
+        "fields": {
+            "user_id": 5,
+            "trip_id": 8,
+            "rating": 5,
+            "comment": "Great tour of some of Nashville's historic sites and locations"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 18,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 8,
+            "rating": 3,
+            "comment": "As a big Civil War buff, I really enjoyed this historic tour."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 19,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 9,
+            "rating": 5,
+            "comment": "We had a lot of things we wanted to try so having our own driver for Half-Day was really nice."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 20,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 9,
+            "rating": 4,
+            "comment": "It was nice having the same driver the entire time and not having to wait on a ride"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 21,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 10,
+            "rating": 5,
+            "comment": "We had a large group and having our own personal driver for the entire day made things so much easier"
+        }
+    }
+]
+
+
+
+
+

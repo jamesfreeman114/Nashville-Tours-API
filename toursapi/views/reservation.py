@@ -78,7 +78,7 @@ class ReservationView(ViewSet):
                 reservation.save()
                 return Response(None, status=status.HTTP_204_NO_CONTENT)
             else:
-                return Response({'message': 'You cannot edit another users reservation.'}, status=status.HTTP_403_FORBIDDEN)
+                return Response({"message": "You cannot edit another user's reservation."}, status=status.HTTP_403_FORBIDDEN)
             
         except Reservation.DoesNotExist:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
