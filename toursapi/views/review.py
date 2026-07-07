@@ -48,11 +48,15 @@ class ReviewView(ViewSet):
         review.rating = request.data['rating']
         review.comment = request.data['comment']
         review.trip = trip
-        review.save()
 
-        serialized = ReviewSerializer(review, many=False)
+        try:
+            review.save()
+            serialized = ReviewSerializer(review, many=False)
 
-        return Response(serialized.data, status=status.HTTP_201_CREATED)
+            return Response(serialized.data, status=status.HTTP_201_CREATED)
+        
+        except Exception as ex:
+            return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
     
     def update(self, request, pk=None):
 

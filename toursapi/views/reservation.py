@@ -44,9 +44,7 @@ class ReservationView(ViewSet):
         Returns:
             Response: JSON serialized representation of newly created Reservation
         """
-        # TODO: Wrap this in a try/except block to handle errors/bad requests and send back appropriate messages and codes.
-
-        # Get an object instance of a trip_vehicle type
+      
         trip_vehicle = TripVehicle.objects.get(pk=request.data['tripVehicleId'])
 
         # Create a reservation object and assign it property values
@@ -54,11 +52,15 @@ class ReservationView(ViewSet):
         reservation.user = request.auth.user
         reservation.scheduled_datetime = request.data['scheduled_datetime']
         reservation.trip_vehicle = trip_vehicle
-        reservation.save()
 
-        serialized = ReservationSerializer(reservation, many=False)
+        try:
+            reservation.save()
+            serialized = ReservationSerializer(reservation, many=False)
 
-        return Response(serialized.data, status=status.HTTP_201_CREATED)
+            return Response(serialized.data, status=status.HTTP_201_CREATED)
+        
+        except Exception as ex:
+            return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
     
     def update(self, request, pk=None):
         """Handle PUT requests
