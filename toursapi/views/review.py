@@ -9,12 +9,16 @@ class ReviewView(ViewSet):
     def list(self, request):
 
         trip = self.request.query_params.get('trip', None)
+        reviewer_only = self.request.query_params.get('reviewer', None)
 
         try:
             reviews = Review.objects.all()
 
             if trip is not None:
-                reviews = Review.objects.filter(trip=trip) 
+                reviews = Review.objects.filter(trip=trip)
+
+            if reviewer_only is not None and reviewer_only == "current":
+                reviews = Review.objects.filter(user=request.auth.user) 
 
             serializer = ReviewSerializer(reviews, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
