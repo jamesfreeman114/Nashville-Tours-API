@@ -6,7 +6,7 @@ from toursapi.views import (
     register_user,
     login_user,
     get_current_user,
-    TripView, VehicleView, TripVehicleView, ReservationView
+    TripView, VehicleView, TripVehicleView, ReservationView, ReviewView
     )
 
 
@@ -16,6 +16,7 @@ router.register(r'trips', TripView, 'trip')
 router.register(r'vehicles', VehicleView, 'vehicle')
 router.register(r'tripvehicles', TripVehicleView, 'tripvehicle')
 router.register(r'reservations', ReservationView, 'reservation')
+router.register(r'reviews', ReviewView, 'review')
 
 urlpatterns = [
     path('', include(router.urls)),

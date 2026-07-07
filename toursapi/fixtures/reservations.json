@@ -93,7 +93,7 @@
         "model": "toursapi.reservation",
         "pk": 11,
         "fields": {
-            "user_id": 7,
+            "user_id": 4,
             "trip_vehicle_id": 4,
             "scheduled_datetime": "2026-07-02 10:15"
         }
@@ -102,7 +102,7 @@
         "model": "toursapi.reservation",
         "pk": 12,
         "fields": {
-            "user_id": 7,
+            "user_id": 2,
             "trip_vehicle_id": 1,
             "scheduled_datetime": "2026-07-07 17:15"
         }
@@ -111,7 +111,7 @@
         "model": "toursapi.reservation",
         "pk": 13,
         "fields": {
-            "user_id": 7,
+            "user_id": 3,
             "trip_vehicle_id": 12,
             "scheduled_datetime": "2026-07-09 19:25"
         }

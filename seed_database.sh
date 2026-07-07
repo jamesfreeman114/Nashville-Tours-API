@@ -10,3 +10,5 @@ python3 manage.py loaddata tokens
 python3 manage.py loaddata trips
 python3 manage.py loaddata vehicles
 python3 manage.py loaddata trip_vehicles
+python3 manage.py loaddata reservations
+python3 manage.py loaddata reviews
