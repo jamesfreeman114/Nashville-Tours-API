@@ -41,15 +41,16 @@ class ReviewView(ViewSet):
     
     def create(self, request):
 
-        trip = Trip.objects.get(pk=request.data['tripId'])
+        try: 
+            trip = Trip.objects.get(pk=request.data['tripId'])
 
-        review = Review()
-        review.user = request.auth.user
-        review.rating = request.data['rating']
-        review.comment = request.data['comment']
-        review.trip = trip
+            review = Review()
+            review.user = request.auth.user
+            review.rating = request.data['rating']
+            review.comment = request.data['comment']
+            review.trip = trip
 
-        try:
+      
             review.save()
             serialized = ReviewSerializer(review, many=False)
 

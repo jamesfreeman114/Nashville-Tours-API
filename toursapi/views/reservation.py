@@ -44,16 +44,14 @@ class ReservationView(ViewSet):
         Returns:
             Response: JSON serialized representation of newly created Reservation
         """
-      
-        trip_vehicle = TripVehicle.objects.get(pk=request.data['tripVehicleId'])
+        try: 
+            trip_vehicle = TripVehicle.objects.get(pk=request.data['tripVehicleId'])
 
-        # Create a reservation object and assign it property values
-        reservation = Reservation()
-        reservation.user = request.auth.user
-        reservation.scheduled_datetime = request.data['scheduled_datetime']
-        reservation.trip_vehicle = trip_vehicle
-
-        try:
+  
+            reservation = Reservation()
+            reservation.user = request.auth.user
+            reservation.scheduled_datetime = request.data['scheduled_datetime']
+            reservation.trip_vehicle = trip_vehicle
             reservation.save()
             serialized = ReservationSerializer(reservation, many=False)
 
