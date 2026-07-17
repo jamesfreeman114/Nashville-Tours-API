@@ -118,6 +118,30 @@
             "trip_id": 9,
             "vehicle_id": 3
         }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 16,
+        "fields": {
+            "trip_id": 10,
+            "vehicle_id": 2
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 17,
+        "fields": {
+            "trip_id": 10,
+            "vehicle_id": 3
+        }
+    },
+    {
+        "model": "toursapi.tripvehicle",
+        "pk": 18,
+        "fields": {
+            "trip_id": 10,
+            "vehicle_id": 4
+        }
     }
 
 ]

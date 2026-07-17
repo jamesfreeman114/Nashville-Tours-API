@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.http import HttpResponseServerError
 from rest_framework import serializers, status
 from rest_framework.response import Response
@@ -94,11 +95,18 @@ class TripSerializer(serializers.ModelSerializer):
     class Meta:
         model = Trip
         fields = ('id', 'name',)
-        
+
+class ReviewUserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ('id', 'first_name', 'last_name')
+
 class ReviewSerializer(serializers.ModelSerializer):
 
     trip = TripSerializer(many=False)
-    
+    user = ReviewUserSerializer(many=False)
+
     class Meta:
         model = Review
         fields = ('id', 'user', 'trip', 'rating', 'comment')

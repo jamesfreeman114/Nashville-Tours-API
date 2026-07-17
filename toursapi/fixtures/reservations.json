@@ -115,6 +115,105 @@
             "trip_vehicle_id": 12,
             "scheduled_datetime": "2026-07-01T19:25Z"
         }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 14,
+        "fields": {
+            "user_id": 1,
+            "trip_vehicle_id": 16,
+            "scheduled_datetime": "2026-08-15T09:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 15,
+        "fields": {
+            "user_id": 2,
+            "trip_vehicle_id": 6,
+            "scheduled_datetime": "2026-07-30T14:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 16,
+        "fields": {
+            "user_id": 3,
+            "trip_vehicle_id": 11,
+            "scheduled_datetime": "2026-08-05T18:30Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 17,
+        "fields": {
+            "user_id": 4,
+            "trip_vehicle_id": 17,
+            "scheduled_datetime": "2026-08-20T08:30Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 18,
+        "fields": {
+            "user_id": 5,
+            "trip_vehicle_id": 9,
+            "scheduled_datetime": "2026-07-29T11:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 19,
+        "fields": {
+            "user_id": 6,
+            "trip_vehicle_id": 2,
+            "scheduled_datetime": "2026-08-03T06:45Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 20,
+        "fields": {
+            "user_id": 1,
+            "trip_vehicle_id": 5,
+            "scheduled_datetime": "2026-08-25T13:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 21,
+        "fields": {
+            "user_id": 5,
+            "trip_vehicle_id": 3,
+            "scheduled_datetime": "2026-07-26T07:15Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 22,
+        "fields": {
+            "user_id": 5,
+            "trip_vehicle_id": 13,
+            "scheduled_datetime": "2026-08-10T10:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 23,
+        "fields": {
+            "user_id": 6,
+            "trip_vehicle_id": 8,
+            "scheduled_datetime": "2026-08-07T15:00Z"
+        }
+    },
+    {
+        "model": "toursapi.reservation",
+        "pk": 24,
+        "fields": {
+            "user_id": 6,
+            "trip_vehicle_id": 18,
+            "scheduled_datetime": "2026-08-28T09:00Z"
+        }
     }
 
 ]

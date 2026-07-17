@@ -208,6 +208,126 @@
             "rating": 5,
             "comment": "We had a large group and having our own personal driver for the entire day made things so much easier"
         }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 22,
+        "fields": {
+            "user_id": 3,
+            "trip_id": 1,
+            "rating": 5,
+            "comment": "Booked this for an early morning flight and the driver was right on time. Made the trip so much less stressful."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 23,
+        "fields": {
+            "user_id": 5,
+            "trip_id": 2,
+            "rating": 4,
+            "comment": "Super easy to book and the car showed up within minutes. Great for quick trips around town."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 24,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 3,
+            "rating": 5,
+            "comment": "Our guide knew all the best spots downtown and kept the whole tour fun and moving."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 25,
+        "fields": {
+            "user_id": 3,
+            "trip_id": 4,
+            "rating": 5,
+            "comment": "Perfect way to see several breweries without worrying about driving. Highly recommend for a group outing."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 26,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 5,
+            "rating": 4,
+            "comment": "Loved learning about the distilling process at each stop. Portions were generous too!"
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 27,
+        "fields": {
+            "user_id": 5,
+            "trip_id": 6,
+            "rating": 4,
+            "comment": "Beautiful scenery and a relaxing afternoon. Wish we'd budgeted more time to enjoy the tastings."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 28,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 7,
+            "rating": 5,
+            "comment": "As musicians ourselves, this tour was a dream. So many iconic studios in one afternoon."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 29,
+        "fields": {
+            "user_id": 3,
+            "trip_id": 8,
+            "rating": 4,
+            "comment": "Really informative tour guide who brought Nashville's history to life."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 30,
+        "fields": {
+            "user_id": 2,
+            "trip_id": 9,
+            "rating": 5,
+            "comment": "Having a driver for half the day let us hit way more stops than we expected."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 31,
+        "fields": {
+            "user_id": 1,
+            "trip_id": 10,
+            "rating": 5,
+            "comment": "Booked the full day for a big family visit and it was worth every penny. Our driver was patient and flexible with our schedule."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 32,
+        "fields": {
+            "user_id": 4,
+            "trip_id": 10,
+            "rating": 4,
+            "comment": "Great option if you want to see a ton of the city without renting a car."
+        }
+    },
+    {
+        "model": "toursapi.review",
+        "pk": 33,
+        "fields": {
+            "user_id": 5,
+            "trip_id": 10,
+            "rating": 5,
+            "comment": "Our driver had great recommendations for lunch and made stops wherever we wanted to go."
+        }
     }
 ]
 
